@@ -7,7 +7,7 @@ Use `document.tex` as a template to create your own PDF-A document.
 
 ## Metadata
 
-The file `*.xmpdata` must be present (though it can be empty) in source directory at the time that package `pdfx` is loaded. In the minimal example this is obtained by means of `\begin{filecontents*}` macro (in `document.tex` file), which creates the file `document.xmpdata` with the metadata specified in the lines between `\begin{filecontents*}` and `\end{filecontents*}`.
+The file `*.xmpdata` must be present (though it can be empty) in source directory at the time that package `pdfx` is loaded. In the minimal example this is obtained by means of `\begin{filecontents*}` macro (in `document.tex` file), which creates the file `document.xmpdata` with the metadata specified in the lines between `\begin{filecontents*}` and `\end{filecontents*}`. ***Warning***: if you modify your metadata in your source tex file, you must remember to delete `*.xmpdata` before compiling, since `*.xmpdata` is not rewrited and the resulting PDF-A will not reflect metadata changes.
 
 ### Symbols permitted in metadata
 
